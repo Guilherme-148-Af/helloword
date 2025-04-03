@@ -3,56 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indíce</title>
-</head>
-<style>
-    body {
-        background-image: url("https://img.freepik.com/fotos-gratis/varios-equipamentos-de-informatica-com-codigo-de-programacao-em-telas-na-mesa-em-uma-sala-escura-conceito-de-seguranca-cibernetica-espaco-de-copia_236854-23136.jpg?size=626&ext=jpg");background-size: cover;
-        background-repeat: no-repeat;
-        text-align: center;
-        font-family: Arial, sans-serif;
-    }
-        h1 {
-            color: rgb(233, 3, 3);
+    <title>Índice</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/vetores-gratis/fundo-preto-com-foco-de-luz_1017-27230.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-        h2 {
-            color: rgb(14, 238, 89);
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
         }
 
-        h3 {
-            color: rgb(185, 173, 0);
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 250px;
+            text-align: center;
         }
 
-        li {
-            color: rgb(0, 255, 255);
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
 
-        a{
+        .large-card {
+            width: 80%;
+            font-size: 1.5em;
+            padding: 30px;
+            margin: 20px auto;
+        }
+
+        h3{
+            color: aliceblue;
+        }
+
+        a {
             color: aqua;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         @keyframes glow {
-            0% {
-                opacity: 0.5;
-                fill: #FF0000; 
-            }
-            25% {
-                opacity: 1;
-                fill: #00FF00; 
-            }
-            50% {
-                opacity: 0.5;
-                fill: #0000FF; 
-            }
-            75% {
-                opacity: 1;
-                fill: #FFFF00; 
-            }
-            100% {
-                opacity: 0.5;
-                fill: #FF00FF;
-            }
+            0% { opacity: 0.5; fill: #FF0000; }
+            25% { opacity: 1; fill: #00FF00; }
+            50% { opacity: 0.5; fill: #0000FF; }
+            75% { opacity: 1; fill: #FFFF00; }
+            100% { opacity: 0.5; fill: #FF00FF; }
         }
 
         svg text {
@@ -64,41 +73,30 @@
 <body>
     <div>
         <svg viewBox="0 0 100 20">
-            <defs>
-                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="5%" stop-color="#FF0000"/>
-                    <stop offset="95%" stop-color="#f70606"/>
-                </linearGradient>
-            </defs>
-            <text text-anchor="middle" x="50" y="15" fill="#FF0000">Indíce</text> 
+            <text text-anchor="middle" x="50" y="15" fill="#FF0000" class="glow">Índice</text> 
         </svg>
     </div>
-    <h3>Olá eu estudo Programação na Escola Profissional do Fundão por enquanto esto no primeiro ano de PI.</h3>
-    <h2>Aqui está o Catálogo Nacional de Qualificações:</h2>
-    <h3>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/779"><strong>Sistemas operativos -</strong> Tipologias</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/780">Utilitários</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/17537">Fundamentos de Python</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/791"><strong>Programação em C/C++ -</strong> Fundamentos</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/786">Algoritmos</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/787">Estruturas de dados</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/788">Princípios metodológicos de programação</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/793">Análise de sistemas</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/17532">Fundamentos da linguagem SQL</a></li>
-        <li><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/17533">Metodologias de desenvolvimento de software</a></li>
-    </h3>
-    <h2>Os meus trabalhos deste ano são:</h2>
-    <h3>
-        <li><a href="/so.html"><strong>Sistemas operativos -</strong> Tipologias</a></li>
-        <li><a href="/utilitarios.html/utilitarios1.html">Utilitários</a></li>
-        <li><a href="/fp.html">Fundamentos de Python</a></li>
-        <li><a href="/c++.html"><strong>Programação em C/C++ -</strong> Fundamentos</a></li>
-        <li><a href="/alg.html">Algoritmos</a></li>
-        <li><a href="/ed.html">Estruturas de dados</a></li>
-        <li><a href="/pmp.html">Princípios metodológicos de programação</a></li>
-        <li><a href="/as.html">Análise de sistemas</a></li>
-        <li><a href="/flSQL.html">Fundamentos da linguagem SQL</a></li>
-        <li><a href="/mds.html">Metodologias de desenvolvimento de software</a></li>
-    </h3>
+
+    <div class="card large-card">
+        <h3>Olá, eu estudo Programação na Escola Profissional do Fundão e estou no primeiro ano de PI.</h3>
+    </div>
+
+    <div class="card large-card">
+        <h2>Catálogo Nacional de Qualificações:</h2>
+    </div>
+
+    <div class="container">
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/779">Sistemas operativos - Tipologias</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/780">Utilitários</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/17537">Fundamentos de Python</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/791">Programação em C/C++ - Fundamentos</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/786">Algoritmos</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/787">Estruturas de dados</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/788">Princípios metodológicos de programação</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/793">Análise de sistemas</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/17532">Fundamentos da linguagem SQL</a></div>
+        <div class="card"><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/17533">Metodologias de desenvolvimento de software</a></div>
+    </div>
 </body>
 </html>
+
